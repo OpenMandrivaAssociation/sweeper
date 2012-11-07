@@ -1,6 +1,6 @@
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version: 4.9.2
+Version: 4.9.3
 Release: 1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
