@@ -1,6 +1,6 @@
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	4.10.0
+Version:	4.10.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -31,6 +31,9 @@ Sweeper helps to clean unwanted traces the user leaves on the system.
 %makeinstall_std -C build
 
 %changelog
+* Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.1-1
+- New version 4.10.1
+
 * Thu Feb 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.0-1
 - New version 4.10.0
 
