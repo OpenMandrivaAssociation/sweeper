@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   sweeper-15.08.0.tar.xz: 359e2ca2a18ddefb56455086ab189857f40c1e7a
+sources:
+  sweeper-15.08.1.tar.xz: 28d749197c0cc921265e4f95d5515c8ebb8c203b
