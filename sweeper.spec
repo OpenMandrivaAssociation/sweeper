@@ -1,7 +1,7 @@
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
 Version:	15.12.0
-Release:	1
+Release:	2
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://www.kde.org/
