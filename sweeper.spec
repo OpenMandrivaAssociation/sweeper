@@ -1,22 +1,26 @@
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	17.08.3
+Version:	17.11.90
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://www.kde.org/
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	kdelibs-devel
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	cmake cmake(ECM) ninja
+BuildRequires:	cmake(KF5ActivitiesStats) cmake(KF5Bookmarks) cmake(KF5Config) cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Crash) cmake(KF5I18n) cmake(KF5KIO) cmake(KF5TextWidgets)
+BuildRequires:	cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5DBus)
+BuildRequires:	cmake(Qt5Gui) cmake(Qt5Widgets) cmake(Qt5Xml)
 
 %description
 Sweeper helps to clean unwanted traces the user leaves on the system.
 
-%files
-%{_datadir}/apps/sweeper                                                                               
+%files -f %{name}.lang
 %{_bindir}/sweeper                                                                                     
-%{_datadir}/applications/kde4/sweeper.desktop                                                          
+%{_datadir}/kxmlgui5/sweeper/sweeperui.rc
+%{_datadir}/metainfo/org.kde.sweeper.appdata.xml
+%{_datadir}/applications/org.kde.sweeper.desktop                                                          
 %{_datadir}/dbus-1/interfaces/org.kde.sweeper.xml                                                      
-%doc %{_docdir}/HTML/*/sweeper
 
 #----------------------------------------------------------------------
 
@@ -24,10 +28,9 @@ Sweeper helps to clean unwanted traces the user leaves on the system.
 %setup -q
 
 %build
-%cmake_kde4 \
-	-DCMAKE_MINIMUM_REQUIRED_VERSION=3.1
-%make
+%cmake_kde5
+%ninja
 
 %install
-%makeinstall_std -C build
-
+%ninja_install -C build
+%find_lang %{name} --with-html --all-name
