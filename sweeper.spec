@@ -11,7 +11,7 @@ BuildRequires:	cmake(KF5ActivitiesStats) cmake(KF5Bookmarks) cmake(KF5Config) cm
 BuildRequires:	cmake(KF5Crash) cmake(KF5I18n) cmake(KF5KIO) cmake(KF5TextWidgets)
 BuildRequires:	cmake(KF5WidgetsAddons) cmake(KF5XmlGui) cmake(Qt5Core) cmake(Qt5DBus)
 BuildRequires:	cmake(Qt5Gui) cmake(Qt5Widgets) cmake(Qt5Xml)
-
+BuildRequires:	cmake(KF5DocTools)
 %description
 Sweeper helps to clean unwanted traces the user leaves on the system.
 
