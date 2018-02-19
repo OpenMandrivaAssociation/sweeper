@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   sweeper-17.12.1.tar.xz: 56a4e21bab76364135893fb08d8e15104e77ecff
+sources:
+  sweeper-17.12.2.tar.xz: fae0657180a890e0154f5a6d9c30d65693e126ab
