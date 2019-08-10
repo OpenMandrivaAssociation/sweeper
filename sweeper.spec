@@ -2,7 +2,7 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	19.07.90
+Version:	19.08.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
