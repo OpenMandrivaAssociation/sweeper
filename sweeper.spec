@@ -2,12 +2,12 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://www.kde.org/
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake cmake(ECM) ninja
 BuildRequires:	cmake(KF5ActivitiesStats) cmake(KF5Bookmarks) cmake(KF5Config) cmake(KF5CoreAddons)
 BuildRequires:	cmake(KF5Crash) cmake(KF5I18n) cmake(KF5KIO) cmake(KF5TextWidgets)
