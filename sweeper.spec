@@ -2,7 +2,7 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -19,6 +19,7 @@ Sweeper helps to clean unwanted traces the user leaves on the system.
 
 %files -f %{name}.lang
 %{_bindir}/sweeper                                                                                     
+%{_datadir}/qlogging-categories5/sweeper.categories
 %{_datadir}/kxmlgui5/sweeper/sweeperui.rc
 %{_datadir}/metainfo/org.kde.sweeper.appdata.xml
 %{_datadir}/applications/org.kde.sweeper.desktop                                                          
