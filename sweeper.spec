@@ -2,8 +2,8 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	22.04.1
-Release:	2
+Version:	22.04.2
+Release:	1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		http://www.kde.org/
