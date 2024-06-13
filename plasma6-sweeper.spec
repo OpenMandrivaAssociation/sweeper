@@ -5,7 +5,7 @@
 
 Name:		plasma6-sweeper
 Summary:	Clean unwanted traces from your system
-Version:	24.05.0
+Version:	24.05.1
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
