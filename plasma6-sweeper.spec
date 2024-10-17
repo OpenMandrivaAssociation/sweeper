@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
-URL:		http://www.kde.org/
+URL:		https://www.kde.org/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/utilities/sweeper/-/archive/%{gitbranch}/sweeper-%{gitbranchd}.tar.bz2#/sweeper-%{git}.tar.bz2
 %else
