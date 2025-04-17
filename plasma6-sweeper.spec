@@ -5,8 +5,8 @@
 
 Name:		plasma6-sweeper
 Summary:	Clean unwanted traces from your system
-Version:	24.12.3
-Release:	%{?git:0.%{git}.}2
+Version:	25.04.0
+Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
 URL:		https://www.kde.org/
@@ -30,6 +30,7 @@ Sweeper helps to clean unwanted traces the user leaves on the system.
 %{_datadir}/metainfo/org.kde.sweeper.appdata.xml
 %{_datadir}/applications/org.kde.sweeper.desktop                                                          
 %{_datadir}/dbus-1/interfaces/org.kde.sweeper.xml                                                      
+%{_datadir}/icons/hicolor/scalable/apps/sweeper.svg
 
 #----------------------------------------------------------------------
 
