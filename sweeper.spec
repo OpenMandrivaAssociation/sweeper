@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
-Name:		plasma6-sweeper
+Name:		sweeper
 Summary:	Clean unwanted traces from your system
 Version:	25.04.0
 Release:	%{?git:0.%{git}.}1
