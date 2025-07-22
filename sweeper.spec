@@ -5,7 +5,7 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
@@ -21,6 +21,12 @@ BuildRequires:	cmake(KF6Crash) cmake(KF6I18n) cmake(KF6KIO) cmake(KF6TextWidgets
 BuildRequires:	cmake(KF6WidgetsAddons) cmake(KF6XmlGui) cmake(Qt6Core) cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Gui) cmake(Qt6Widgets) cmake(Qt6Xml)
 BuildRequires:	cmake(KF6DocTools)
+
+%rename plasma6-sweeper
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Sweeper helps to clean unwanted traces the user leaves on the system.
 
@@ -31,18 +37,3 @@ Sweeper helps to clean unwanted traces the user leaves on the system.
 %{_datadir}/applications/org.kde.sweeper.desktop                                                          
 %{_datadir}/dbus-1/interfaces/org.kde.sweeper.xml                                                      
 %{_datadir}/icons/hicolor/scalable/apps/sweeper.svg
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n sweeper-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --with-html --all-name
