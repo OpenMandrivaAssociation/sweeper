@@ -5,7 +5,7 @@
 
 Name:		sweeper
 Summary:	Clean unwanted traces from your system
-Version:	26.04.2
+Version:	26.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	LGPLv2
